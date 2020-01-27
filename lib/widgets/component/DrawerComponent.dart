@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:concordia_go/blocs/LocationBloc.dart';
+import 'package:concordia_go/utilities/ApplicationConstants.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:concordia_go/utilities/ConcordiaConstants.dart' as concordia_constants;
 import 'package:concordia_go/blocs/BlocProvider.dart';
@@ -85,6 +86,15 @@ class DrawerComponentState extends State<DrawerComponent> {
               BlocProvider.of<LocationBloc>(context)
                   .locationCoordinates
                   .add(LatLng(concordia_constants.FG_BUILDING_LATITUDE, concordia_constants.FG_BUILDING_LONGITUDE));
+            },
+          ),
+          // Algorithm svg tab
+          ListTile(
+            leading: Icon(Icons.image),
+            title: Text('Indoor Navigation'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, INDOOR_NAVIGATION_ROUTE);
             },
           ),
         ],
