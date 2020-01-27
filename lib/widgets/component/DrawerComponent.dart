@@ -94,7 +94,14 @@ class DrawerComponentState extends State<DrawerComponent> {
             title: Text('Indoor Navigation'),
             onTap: () {
               Navigator.pop(context);
+<<<<<<< refs/remotes/origin/develop
               Navigator.pushNamed(context, INDOOR_NAVIGATION_ROUTE);
+=======
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => IndoorNavigationScreen()),
+              );
+>>>>>>> Add indoor navigation route
             },
           ),
         ],

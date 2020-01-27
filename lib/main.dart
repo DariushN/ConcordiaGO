@@ -12,9 +12,9 @@ class Application extends StatelessWidget {
     return MaterialApp(
       title: APPLICATION_NAME,
       initialRoute: HOME_ROUTE,
-      routes: {
+      routes: <String, WidgetBuilder>{
         HOME_ROUTE: (context) => HomeScreen(),
-        INDOOR_NAVIGATION_ROUTE: (context) => IndoorNavigationPage(),
+        INDOOR_NAVIGATION_ROUTE: (context) => IndoorNavigationScreen(),
       }
     );
   }

@@ -5,7 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 
-class IndoorNavigationPage extends StatelessWidget {
+class IndoorNavigationScreen extends StatefulWidget {
+  @override
+  State<IndoorNavigationScreen> createState() => IndoorNavigationPageState();
+}
+
+class IndoorNavigationPageState extends State<IndoorNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -17,7 +22,7 @@ class IndoorNavigationPage extends StatelessWidget {
         child: new Center(
           child: new Column(
             children: <Widget>[
-              new Image.asset('assets/images/CC1.png')
+              new Text("Welcome to the navigation route!")
             ],
           )
         )
