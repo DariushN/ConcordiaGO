@@ -24,7 +24,7 @@ class HomePageState extends State<HomeScreen> {
         appBar: PreferredSize(
             preferredSize: Size.fromHeight(screenHeight / 12),
             child: AppBar(
-              title: Image.asset('assets/logo.png', height: screenHeight / 12),
+              title: Image.asset('assets/images/logo.png', height: screenHeight / 12),
               backgroundColor: Color(0xff800206),
             )),
         body: GoogleMapsComponent(),
