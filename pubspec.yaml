@@ -13,6 +13,9 @@ dependencies:
   google_maps_flutter: ^0.5.21+15
   bloc: ^3.0.0
 
+  # This dependency adds SVG file support to flutter
+  flutter_svg: ^0.17.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -25,5 +28,4 @@ flutter_launcher_name:
 flutter:
   uses-material-design: true
   assets:
-    - assets/logo.png
-    - assets/Map.png
+    - assets/images/
