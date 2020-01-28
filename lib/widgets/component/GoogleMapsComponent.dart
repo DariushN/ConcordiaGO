@@ -109,6 +109,7 @@ class GoogleMapsComponentState extends State<GoogleMapsComponent> {
             width: screenHeight / 13,
             padding: EdgeInsets.all(5.0),
             child: FloatingActionButton(
+              heroTag: null,
               child: Icon(Icons.zoom_in, size: screenWidth / 12),
               backgroundColor: Color(0xff800206),
               onPressed: () {
@@ -121,6 +122,7 @@ class GoogleMapsComponentState extends State<GoogleMapsComponent> {
             width: screenHeight / 13,
             padding: EdgeInsets.all(5.0),
             child: FloatingActionButton(
+              heroTag: null,
               child: Icon(Icons.zoom_out, size: screenWidth / 12),
               backgroundColor: Color(0xff800206),
               onPressed: () {
@@ -133,6 +135,7 @@ class GoogleMapsComponentState extends State<GoogleMapsComponent> {
             width: screenHeight / 10,
             padding: EdgeInsets.all(5.0),
             child: FloatingActionButton(
+              heroTag: null,
               child: Icon(Icons.sync, size: screenWidth / 10),
               backgroundColor: Color(0xff800206),
               onPressed: () {
