@@ -1,8 +1,7 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:photo_view/photo_view.dart';
 
 
 class IndoorNavigationScreen extends StatefulWidget {
@@ -14,17 +13,13 @@ class IndoorNavigationPageState extends State<IndoorNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Indoor Navigation'),
+      appBar: AppBar(
+        title: Text('Indoor Navigation'),
         backgroundColor: Colors.blueGrey,
       ),
-      body: new Container(
-        child: new Center(
-          child: new Column(
-            children: <Widget>[
-              new Text("Welcome to the navigation route!")
-            ],
-          )
+      body: Container(
+        child: PhotoView(
+          imageProvider: AssetImage('assets/images/CC1.png'),
         )
       )
     );

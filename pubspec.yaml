@@ -16,6 +16,9 @@ dependencies:
   # This dependency adds SVG file support to flutter
   flutter_svg: ^0.17.0
 
+  # This dependency adds photo view functionality (i.e. zoom, etc.)
+  photo_view: ^0.9.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
