@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:matrix_gesture_detector/matrix_gesture_detector.dart';
 import 'package:photo_view/photo_view.dart';
 
 
@@ -17,21 +18,14 @@ class IndoorNavigationPageState extends State<IndoorNavigationScreen> {
         title: Text('Indoor Navigation'),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Container(
-        child: PhotoView(
-          imageProvider: AssetImage('assets/images/CC1.png'),
-        )
+      body: MatrixGestureDetector(
+        onMatrixUpdate: (Matrix4 m, Matrix4 tm, Matrix4 sm, Matrix4 rm) {
+          setState(() {
+
+          });
+        },
       )
     );
   }
 }
-
-//return MaterialApp(
-//home: Scaffold(
-//appBar: AppBar(
-//title: Text('Shortest Path Algorithm'),
-//),
-//body: Image.asset('assets/images/CC1.png'),
-//)
-//);
 
